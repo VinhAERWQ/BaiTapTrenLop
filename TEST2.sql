@@ -66,7 +66,7 @@ RETURN
         HX.DONGIA,
         HX.SLBAN,  
         CASE
-			WHEN DATEPART(WEEKDAY, HD.NGAYXUAT) = 0 THEN N'Thứ hai'            
+		WHEN DATEPART(WEEKDAY, HD.NGAYXUAT) = 0 THEN N'Thứ hai'            
             WHEN DATEPART(WEEKDAY, HD.NGAYXUAT) = 1 THEN N'Thứ ba'
             WHEN DATEPART(WEEKDAY, HD.NGAYXUAT) = 2 THEN N'Thứ tư'
             WHEN DATEPART(WEEKDAY, HD.NGAYXUAT) = 3 THEN N'Thứ năm'
