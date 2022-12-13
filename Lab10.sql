@@ -95,15 +95,4 @@ begin
 			set SiSo=@ss
 			where malop in (select malop from inserted)
 		end
--5.Tạo 2 login user1 và user2 đăng nhập vào sql, tạo 2 user tên user1 và user2 trên CSDL Quản lý
-Sinh viên tương ứng với 2 login vừa tạo.
--tao login
-create login user1 with password = '123'
-create login user2 with password = '456'
--tao user
-create user user1 for login user1
-create user user2 for login user2
--6.Gán quyền cho user 1 các quyền Insert, Update, trên bảng sinhvien, gán quyền select cho
-user2 trên bảng sinhvien
-grant Insert, Update on sinhvien to user1
-grant select on sinhvien to user2
+
